@@ -6,6 +6,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- The code below imports bootstrap JS - this adds interactivity. -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <style>
+        .spinner-border{
+            animation-duration:0.5s;
+        }
+    </style>
+
 </head>
 <body>
 <!-- Follow the steps below to build out a quick webpage using boostrap documentation. -->
@@ -16,14 +23,68 @@
      but scroll and find the one that simply says "Nav" -->
 
 <!-- 3. Copy the HTML code and paste it below. Run your code - what do you see?  -->
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <!-- 4. Auto-format your page to clean things up. -->
 
 <!-- 5. Next, in the search bar, type "cards" and press enter. Copy the "Example" HTML and paste below. -->
-
+<div class="card" style="width: 18rem;">
+  <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 <!-- 6. Find an image you like from a Google search - put this as the src for the img tag. -->
 
 <!-- 7. Scroll through the side menu and see what else you can add - take a look at the options in the "Components" section.  -->
+<div class="spinner-border text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-light" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
 
 <!-- 8. Try out some new code and have fun! 😊 -->
     
